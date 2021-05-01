@@ -52,7 +52,7 @@ class MyPortfolio extends StatelessWidget {
                   alignment: Alignment.center,
                   margin: EdgeInsets.all(10),
                   child: Text(
-                    'In a population of over 200 million people in Nigeria, I believe i have an opportunity to make a real difference through technology by providing smart and disruptive ways of solving the challenges we face daily. I am passionate, driven, goal oriented, a great team player and i have a high sense of responsibility to whatever i am committed.',
+                    'In a population of over 200 million people in Nigeria, I believe i have an opportunity to make a real difference through technology by providing smart and disruptive ways of solving the challenges we face daily. I am passionate, driven, goal oriented, a great team player and i have a high sense of responsibility to whatever i am committed to.',
                     textAlign: TextAlign.justify,
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
