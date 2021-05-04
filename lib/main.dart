@@ -10,10 +10,6 @@ class MyPortfolio extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          // foregroundDecoration: BoxDecoration(
-          //     image: DecorationImage(
-          //Image: AssetImage("lib/img/foto.png"),
-          // )),
           foregroundDecoration: new BoxDecoration(
             image: new DecorationImage(
               image: AssetImage("lib/img/icons.png"),
