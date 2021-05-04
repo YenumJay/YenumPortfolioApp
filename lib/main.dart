@@ -10,10 +10,15 @@ class MyPortfolio extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          foregroundDecoration: BoxDecoration(
-              image: DecorationImage(
-            image: AssetImage("lib/img/foto.png"),
-          )),
+          // foregroundDecoration: BoxDecoration(
+          //     image: DecorationImage(
+          //Image: AssetImage("lib/img/foto.png"),
+          // )),
+          foregroundDecoration: new BoxDecoration(
+            image: new DecorationImage(
+              image: AssetImage("lib/img/icons.png"),
+            ),
+          ),
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("lib/img/AppBackground.png"),
@@ -62,7 +67,8 @@ class MyPortfolio extends StatelessWidget {
                 ),
                 Container(
                   alignment: Alignment.center,
-                  margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.only(
+                      left: 10.0, top: 10.0, right: 10.0, bottom: 50.0),
                   child: Text(
                     'In a population of over 200 million people in Nigeria, I believe i have an opportunity to make a real difference through technology by providing smart and disruptive ways of providing solutions to the challenges we face daily. I am passionate, driven, goal oriented, a great team player and i have a high sense of responsibility to whatever i am committed to.',
                     textAlign: TextAlign.justify,
@@ -74,21 +80,22 @@ class MyPortfolio extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Container(
-                    child: Image(
-                      height: 500,
-                      width: 150,
-                      fit: BoxFit.fill,
-                      image: AssetImage(
-                        "lib/img/icons.png",
-                      ),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            print(
+                'I would like you to build a mobile application for my company');
+          },
+          child: Text(
+            'Chat',
+            style: TextStyle(
+              color: Colors.red,
+            ),
+          ),
+          backgroundColor: Colors.white,
         ),
       ),
     );
